@@ -16,6 +16,8 @@ class GoProductStreamOverlay extends Plugin
 
     public function onStartDispatch()
     {
-       die('Test');
+      	$this->container->get('Template')->addTemplateDir(
+      			$this->getPath() . '/Resources/views/'
+      	);
     }
 }
