@@ -14,7 +14,7 @@ class GoProductStreamOverlay extends Plugin
          ];
     }
 
-    public function onStartDispatch()
+    public function onStartDispatch(\Enlight_Event_EventArgs $args)
     {
       	$this->container->get('Template')->addTemplateDir(
       			$this->getPath() . '/Resources/views/'
